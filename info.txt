@@ -1,0 +1,10 @@
+OpenSans
+OpenSans  Sembold
+OpenSans  Bold
+
+Raleway
+Raleway  Light
+Raleway  Regular
+Raleway  Bold
+
+FontAwesome
