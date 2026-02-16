@@ -6,40 +6,34 @@ $col-hov: #1100ff;
 
 a {
   color: #fff;
-  transition: .3s;
+  transition: 0.3s;
 
   &:hover {
     color: $col-hov;
   }
 }
 
-@mixin center {
-  margin-left: 50%;
-  transform: translate(-50%);
-}
-
-
 .container {
   max-width: 1430px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-
 }
 
 body {
   background-color: $bg-gen;
+  &.lock {
+    overflow: hidden;
+  }
 }
 
 //------------ NAV ----------------------
 
 .nav {
   position: absolute;
-  top: 19px;
   left: 0;
   right: 0;
   z-index: 5;
-  margin-top: 100px;
 }
 
 .nav__content {
@@ -52,11 +46,58 @@ body {
 
 .nav__logo {
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 
   &:hover {
     transform: scale(1.1);
   }
+}
+
+.burger-btn {
+  display: block;
+  width: 38px;
+  height: 22px;
+  position: relative;
+  z-index: 3;
+  cursor: pointer;
+
+  span {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s;
+
+    &:first-child {
+      top: 0;
+    }
+
+    &:last-child {
+      top: auto;
+      bottom: 0;
+    }
+  }
+
+  &.active {
+    span {
+      transform: scale(0);
+
+      &:first-child {
+        transform: rotate(-45deg);
+        top: calc(50% - 1px);
+      }
+
+      &:last-child {
+        transform: rotate(45deg);
+        bottom: calc(50% - 1px);
+      }
+    }
+  }
+}
+.burger-btn {
+  display: none;
 }
 
 .nav__menu {
@@ -84,17 +125,15 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  margin-top: 100px;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
-    width: 100%;
     height: 100%;
-    background-image: url('./../images/header/header_panel.jpg');
+    background-image: url("./../images/header/header_panel.jpg");
     background-size: cover;
     filter: brightness(52%);
   }
@@ -125,7 +164,7 @@ body {
   font-family: "Raleway";
   color: rgb(255, 255, 255);
   text-align: left;
-  letter-spacing: .013rem;
+  letter-spacing: 0.013rem;
 }
 
 .header-strip {
@@ -164,11 +203,11 @@ body {
   font-family: "OpenSans";
   color: rgb(255, 255, 255);
   text-align: left;
-  letter-spacing: .07rem;
+  letter-spacing: 0.07rem;
 
   border: 2px solid #fff;
   background-color: transparent;
-  padding: 11px 31px 11px 31px
+  padding: 11px 31px 11px 31px;
 }
 
 .header-inner__card {
@@ -188,7 +227,7 @@ body {
   font-family: "OpenSans";
   color: rgb(51, 51, 51);
   font-weight: bold;
-  letter-spacing: .03rem;
+  letter-spacing: 0.03rem;
   text-align: left;
 
   position: absolute;
@@ -200,7 +239,7 @@ body {
 .card-top--m {
   color: #ff8b38;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 
   &:hover {
     color: $col-hov;
@@ -213,13 +252,13 @@ body {
   font-family: "OpenSans";
   color: rgb(255, 255, 255);
   text-align: left;
-  letter-spacing: .08rem;
+  letter-spacing: 0.08rem;
   position: absolute;
   left: 68vw;
   top: 537px;
   z-index: 1;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 
   &:hover {
     transform: scale(1.1);
@@ -243,7 +282,7 @@ body {
   cursor: pointer;
 }
 
-.input-psswword {
+.input-password {
   position: absolute;
   top: 444px;
   left: 62vw;
@@ -254,24 +293,30 @@ body {
 @media (max-width: 1400px) {
   .nav__content {
     padding: 0 135px;
+    border-bottom: 2px solid #7e7d7d;
+  }
+
+  .header-img {
+    background-position: -15px 1px;
   }
 
   .header-inner__logo {
     left: 135px;
   }
 
-  .header__title {
-    max-width: 530px;
-    left: 134px;
-    top: 266px;
-  }
-
   .header-inner__title {
-    letter-spacing: 0rem;
+    width: 570px;
+    font-size: 36px;
+    font-family: "Raleway";
+    color: rgb(255, 255, 255);
+    text-align: left;
+    letter-spacing: -0.01rem;
+    margin-left: -16px;
   }
 
   .header-strip {
     left: 128px;
+    top: 377px;
   }
 
   .header-text {
@@ -302,7 +347,7 @@ body {
     left: 66.2vw;
   }
 
-  .input-psswword {
+  .input-password {
     left: 66.2vw;
   }
 }
@@ -438,7 +483,7 @@ body {
     left: 35.5vw;
   }
 
-  .input-psswword {
+  .input-password {
     top: 845px;
     left: 35.5vw;
   }
@@ -461,6 +506,59 @@ body {
 }
 
 @media (max-width: 768px) {
+  .burger-btn {
+    display: block;
+  }
+
+  .menu__list {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 400px;
+    width: 100%;
+    background-color: red;
+    z-index: 2;
+    transition: all 0.3s;
+    display: flex;
+    transition: all 0.5s;
+    overflow: auto;
+  }
+
+  .active {
+    left: 0;
+  }
+
+  .nav__menu {
+    flex-direction: column;
+    gap: 0;
+    margin: auto;
+    padding: 30px;
+  }
+
+  .nav__link {
+    display: block;
+    font-size: 30px;
+    line-height: 70px;
+    color: #fff;
+
+    &:hover {
+      color: $col-hov;
+      text-decoration: underline;
+    }
+  }
+
+  .burger-btn {
+    position: absolute;
+    left: 90%;
+    top: 20px;
+    z-index: 6;
+  }
+
+  .list__social {
+    position: absolute;
+    margin-left: 40px;
+  }
+
   .nav__logo {
     position: absolute;
     left: 90px;
@@ -473,10 +571,6 @@ body {
 
   .nav__content {
     max-height: 60px;
-  }
-
-  .nav__menu {
-    display: none;
   }
 
   .nav-logo__img {
@@ -548,10 +642,13 @@ body {
     left: 31vw;
   }
 
-  .input-psswword {
+  .input-password {
     top: 815px;
     left: 31vw;
   }
+}
+
+@media (max-width: 560px) {
 }
 
 @media (max-width: 575px) {
@@ -560,20 +657,19 @@ body {
     border-bottom: 2px solid #7e7d7d;
   }
 
-  .header-img {
-    margin-top: 40px;
-  }
-
-  .nav {
-    margin-top: 40px;
-  }
-
   .nav__logo {
     left: 65px;
   }
 
   .nav-logo__img {
     max-width: 60%;
+  }
+
+  .burger-btn {
+    left: 88%;
+    top: 14px;
+    width: 35px;
+    height: 20px;
   }
 
   .header-img {
@@ -593,7 +689,7 @@ body {
   .header__title {
     top: 170px;
     left: 50%;
-    transform: translate(-44%)
+    transform: translate(-44%);
   }
 
   .header-inner__title {
@@ -607,7 +703,7 @@ body {
   .header-text {
     top: 300px;
     left: 50%;
-    transform: translate(-45%)
+    transform: translate(-45%);
   }
 
   .header-inner__text {
@@ -644,27 +740,31 @@ body {
     left: 26vw;
   }
 
-  .input-psswword {
+  .input-password {
     top: 740px;
     left: 26vw;
   }
 }
 
 @media (max-width: 480px) {
+  body.lock {
+    overflow: hidden;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+  }
+
   .nav__logo {
     left: 60px;
   }
 
-  .header-img {
-    margin-top: 50px;
-  }
-
-  .nav {
-    margin-top: 50px;
-  }
-
   .nav-logo__img {
     max-width: 65%;
+  }
+
+  .burger-btn {
+    left: 86%;
+    top: 15px;
   }
 
   .header-img {
@@ -683,7 +783,7 @@ body {
 
   .header__title {
     top: 150px;
-    transform: translate(-35%)
+    transform: translate(-35%);
   }
 
   .header-inner__title {
@@ -738,66 +838,84 @@ body {
     left: 24.5vw;
   }
 
-  .input-psswword {
+  .input-password {
     top: 665px;
     left: 24.5vw;
   }
 }
 
+@media (max-width: 420px) {
+  .burger-btn {
+    left: 84%;
+    top: 15px;
+  }
+}
+
 @media (max-width: 396px) {
+  .nav__logo {
+    left: 40px;
+  }
+
+  .burger-btn {
+    left: 84%;
+    top: 15px;
+  }
+
   .header-inner__text {
     width: 330px;
   }
 
-    .header__title {
+  .header__title {
     top: 150px;
-    transform: translate(-30%)
+    transform: translate(-30%);
   }
 
- .header-inner__title {
+  .header-inner__title {
     width: 300px;
     font-size: 20px;
   }
 
-    .header__button {
+  .header__button {
     top: 360px;
   }
 
-   .header__card {
+  .header__card {
     left: 9vw;
   }
 
-   .card-top {
+  .card-top {
     left: 17vw;
     font-size: 16px;
   }
 
-   .card-bottom {
+  .card-bottom {
     left: 36vw;
   }
 }
 
 @media (max-width: 360px) {
- .header-inner__text {
+  .burger-btn {
+    left: 81%;
+    top: 15px;
+  }
+
+  .header-inner__text {
     width: 300px;
   }
 }
 
 @media (max-width: 320px) {
+  .burger-btn {
+    left: 80%;
+    top: 12px;
+  }
+
   .nav__content {
     max-height: 45px;
   }
 
   .nav__logo {
     left: 40px;
-  }
-
-  .header-img {
-    margin-top: 20px;
-  }
-
-  .nav {
-    margin-top: 20px;
   }
 
   .nav-logo__img {
@@ -844,7 +962,7 @@ body {
 
   .button {
     font-size: 14px;
-    padding: 9px 28px 9px 28px
+    padding: 9px 28px 9px 28px;
   }
 
   .header__card {
@@ -873,7 +991,7 @@ body {
     left: 20vw;
   }
 
-  .input-psswword {
+  .input-password {
     top: 615px;
     left: 20vw;
   }
