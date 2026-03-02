@@ -160,6 +160,7 @@ body {
 }
 
 .header-inner__title {
+  width: 530px;
   font-size: 36px;
   font-family: "Raleway";
   color: rgb(255, 255, 255);
@@ -297,6 +298,7 @@ body {
   }
 
   .header-img {
+    min-height: 712px;
     background-position: -15px 1px;
   }
 
@@ -305,7 +307,7 @@ body {
   }
 
   .header-inner__title {
-    width: 570px;
+    width: 540px;
     font-size: 36px;
     font-family: "Raleway";
     color: rgb(255, 255, 255);
@@ -646,9 +648,6 @@ body {
     top: 815px;
     left: 31vw;
   }
-}
-
-@media (max-width: 560px) {
 }
 
 @media (max-width: 575px) {
@@ -994,5 +993,156 @@ body {
   .input-password {
     top: 615px;
     left: 20vw;
+  }
+}
+
+//--------------- SOCIAL --------------------
+
+.brand-panel__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-panel__title {
+  //width: 530px;
+  font-size: 20px;
+  font-family: "Open Sans";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  text-align: left;
+  letter-spacing: 0.07rem;
+  margin-left: 10vw;
+  margin-bottom: 5px;
+}
+
+.brand-panel__text {
+  width: 370px;
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: rgb(134, 135, 139);
+  line-height: 1.4;
+  text-align: left;
+  margin-left: 10vw;
+}
+
+.brand-panel__social {
+  font-size: 48px;
+  font-family: "FontAwesome";
+  color: rgb(204, 204, 204);
+  text-align: left;
+  display: flex;
+  gap: 39px;
+  margin-right: 11vw;
+}
+
+.facebook-img {
+  opacity: 0.5;
+}
+
+@media (max-width: 1400px) {
+  .brand-panel__title {
+    margin-left: 9.6vw;
+    margin-bottom: 5px;
+    letter-spacing: 0.001rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .brand-panel__social {
+    gap: 30px;
+    margin-right: 7vw;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .brand-panel__info {
+    margin-left: -30px;
+  }
+
+  .brand-panel__social {
+    margin-right: 2vw;
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 990px) {
+  .brand-panel__info {
+    margin-left: 4vw;
+  }
+  .brand-panel__title {
+    margin-left: 3vw;
+  }
+
+  .brand-panel__text {
+    //width: 370px;
+    width: 37.3vw;
+    margin-left: 3vw;
+  }
+
+  .brand-panel__social {
+    gap: 3.03vw;
+    margin-right: 3vw;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .brand-panel__row {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    min-height: 150px;
+  }
+
+  .brand-panel__title {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .brand-panel__text {
+    width: 65.1vw;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .brand-panel__social {
+    gap: 5.85vw;
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 575px) {
+  .brand-panel__social {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-panel__row {
+    height: auto;
+    min-height: 130px;
+  }
+
+  .brand-panel__title {
+    font-size: 19px;
+  }
+  .brand-panel__text {
+    width: 90vw;
+    font-size: 13px;
+  }
+
+  .brand-panel__social {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 380px) {
+  .brand-panel__social {
+    font-size: 20px;
   }
 }
