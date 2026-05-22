@@ -65,10 +65,6 @@ if (tab_1 && tab_2 && tab_3) {
     tab_1.classList.remove('active')
     tab_2.classList.remove('active')
   })
-
-
-
-
 }
 
 
