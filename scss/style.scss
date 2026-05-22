@@ -2073,16 +2073,16 @@ body {
   }
 }
 
-//--------------- THIS-AVESOME --------------------------
+//--------------- THIS-aweson --------------------------
 
-.this-avesome__content {
+.this-aweson__content {
   width: 100%;
   height: auto;
   padding-bottom: 70px;
 }
 
 
-.this-avesome__title {
+.this-aweson__title {
   font-size: 36px;
   font-family: "Open Sans";
   font-weight: 400;
@@ -2107,7 +2107,7 @@ body {
   }
 }
 
-.this-avesome__text {
+.this-aweson__text {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
@@ -2122,7 +2122,7 @@ body {
   text-align: left;
 }
 
-.this-avesome__row {
+.this-aweson__row {
   display: flex;
   justify-content: space-around;
   text-align: center;
@@ -2152,7 +2152,7 @@ body {
 }
 
 @media (max-width: 1400px) {
-  .this-avesome__row {
+  .this-aweson__row {
     gap: 10px;
     flex-wrap: wrap;
     padding: 0 110px;
@@ -2160,11 +2160,11 @@ body {
 }
 
 @media (max-width: 1319px) {
-  .this-avesome__content {
+  .this-aweson__content {
     width: 100%;
     min-height: auto;
   }
-  .this-avesome__title {
+  .this-aweson__title {
     padding-top: 50px;
 
     &::after {
@@ -2172,27 +2172,27 @@ body {
     }
   }
 
-  .this-avesome__row {
+  .this-aweson__row {
     margin-top: 120px;
   }
 
-  .this-avesome__column3 {
+  .this-aweson__column3 {
     margin-top: 70px;
   }
 }
 
 @media (max-width: 959px) {
-  .this-avesome__column2 {
+  .this-aweson__column2 {
     margin-top: 50px;
   }
 
-  .this-avesome__column3 {
+  .this-aweson__column3 {
     margin-top: 50px;
   }
 }
 
 @media (max-width: 768px) {
-  .this-avesome__title {
+  .this-aweson__title {
     font-size: 30px;
     padding-top: 50px;
 
@@ -2207,7 +2207,7 @@ body {
 }
 
 @media (max-width: 575px) {
-  .this-avesome__title {
+  .this-aweson__title {
     font-size: 25px;
     padding-top: 45px;
 
@@ -2215,23 +2215,23 @@ body {
       top: 98px;
     }
   }
-  .this-avesome__text {
+  .this-aweson__text {
     width: 320px;
     text-align: center;
   }
-  .this-avesome__row {
+  .this-aweson__row {
     padding: 0;
   }
 }
 
 @media (max-width: 398px) {
 
-  .this-avesome__column1 {
+  .this-aweson__column1 {
     margin-top: 10px;
   }
 
-    .this-avesome__column2,
-     .this-avesome__column3  {
+    .this-aweson__column2,
+     .this-aweson__column3  {
     margin-top: 25px;
   }
 
@@ -2247,12 +2247,12 @@ body {
 }
 
 @media (max-width: 320px) {
-  .this-avesome__content {
+  .this-aweson__content {
   width: 100%;
   height: auto;
   padding-bottom: 45px;
 }
-   .this-avesome__title {
+   .this-aweson__title {
     font-size: 20px;
     padding-top: 40px;
     margin-bottom: 30px;
@@ -2268,7 +2268,7 @@ body {
   font-size: 13px;
 }
 
- .this-avesome__column1 {
+ .this-aweson__column1 {
     margin-top: -10px;
   }
 }
