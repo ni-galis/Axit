@@ -2198,6 +2198,7 @@ body.lock {
   height: auto;
   min-height: 885px;
   margin-top: 103px;
+  margin-top: 150px;
 }
 
 .pricing-options__title {
@@ -2275,9 +2276,8 @@ body.lock {
 }
 @media (max-width: 785px) {
   .pricing-options__content {
-    height: auto;
     min-height: 1820px;
-    margin-top: 100px;
+    margin-top: 50px;
   }
 }
 .pricing-options__title {
@@ -2296,9 +2296,7 @@ body.lock {
 }
 @media (max-width: 480px) {
   .pricing-options__content {
-    height: auto;
     min-height: 1790px;
-    margin-top: 100px;
   }
   .pricing-options__title {
     font-size: 34px;
@@ -2312,6 +2310,10 @@ body.lock {
   }
 }
 @media (max-width: 400px) {
+  .pricing-options__content {
+    min-height: 100vh;
+    padding-bottom: 50px;
+  }
   .pricing-options__title {
     font-size: 30px;
   }
@@ -2323,9 +2325,188 @@ body.lock {
   .pricing-options__title {
     font-size: 28px;
   }
+  .pricing-options__content {
+    min-height: 100vh;
+  }
 }
 @media (max-width: 320px) {
   .pricing-options__content {
-    min-height: 1430px;
+    min-height: 1400px;
+  }
+}
+.reputation__content {
+  height: auto;
+  min-height: 590px;
+  background-color: #fff;
+}
+
+.reputation__top {
+  margin-top: -119px;
+}
+
+.reputation__title {
+  font-size: 36px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  color: rgb(33, 33, 33);
+  line-height: 1.194;
+  letter-spacing: 0.064rem;
+  margin-left: 5px;
+  text-align: center;
+  padding-top: 97px;
+  margin-bottom: 52px;
+  position: relative;
+}
+.reputation__title::after {
+  content: "";
+  position: absolute;
+  top: 164px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 65px;
+  height: 2px;
+  background-color: #ff8b38;
+}
+
+.reputation___txt {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.reputation__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 120px;
+  padding-top: 70px;
+}
+
+@media (max-width: 1400px) {
+  .reputation__top {
+    margin-top: -115px;
+  }
+  .reputation__title {
+    letter-spacing: 0.04rem;
+  }
+  .reputation__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media (max-width: 1200px) {
+  .reputation__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 50px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 100px;
+    gap: 20px;
+  }
+}
+@media (max-width: 990px) {
+  .reputation__content {
+    height: auto;
+    min-height: 750px;
+  }
+  .reputation__title {
+    padding-top: 50px;
+  }
+  .reputation__title::after {
+    top: 115px;
+  }
+  .reputation__inner {
+    gap: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 785px) {
+  .reputation__content {
+    margin-top: 110px;
+  }
+}
+@media (max-width: 768px) {
+  .reputation__title {
+    font-size: 30px;
+    padding-top: 20px;
+  }
+  .reputation__title::after {
+    content: "";
+    top: 77px;
+  }
+  .reputation___txt {
+    width: 700px;
+    text-align: center;
+  }
+}
+@media (max-width: 725px) {
+  .reputation__content {
+    height: auto;
+    min-height: 1000px;
+  }
+}
+@media (max-width: 575px) {
+  .reputation__title {
+    font-size: 26px;
+  }
+  .reputation__title::after {
+    top: 75px;
+  }
+}
+@media (max-width: 511px) {
+  .reputation__title {
+    font-size: 26px;
+  }
+  .reputation__title::after {
+    top: 100px;
+  }
+  .reputation__content {
+    height: auto;
+    min-height: 1030px;
+  }
+}
+@media (max-width: 400px) {
+  .reputation__content {
+    min-height: 890px;
+  }
+  .reputation__title {
+    font-size: 24px;
+    padding-top: 0px;
+    margin-bottom: 30px;
+  }
+  .reputation__title::after {
+    top: 70px;
+  }
+  .reputation___txt {
+    width: 300px;
+    text-align: center;
+  }
+}
+@media (max-width: 320px) {
+  .reputation__content {
+    min-height: 780px;
+  }
+  .reputation__title {
+    font-size: 22px;
+  }
+  .reputation__title::after {
+    top: 66px;
   }
 }

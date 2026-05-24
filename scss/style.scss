@@ -2072,7 +2072,7 @@ body {
   }
 }
 
-//--------------- THIS-aweson --------------------------
+//--------------- THIS-AWESON --------------------------
 
 .this-aweson__content {
   width: 100%;
@@ -2280,6 +2280,7 @@ body {
   height: auto;
   min-height: 885px;
   margin-top: 103px;
+  margin-top: 150px;
 }
 
 .pricing-options__title {
@@ -2344,9 +2345,9 @@ body {
 
 @media (max-width: 785px) {
   .pricing-options__content {
-    height: auto;
+    //height: auto;
     min-height: 1820px;
-    margin-top: 100px;
+    margin-top: 50px;
   }
 }
 
@@ -2368,9 +2369,9 @@ body {
 
 @media (max-width: 480px) {
   .pricing-options__content {
-    height: auto;
+    //height: auto;
     min-height: 1790px;
-    margin-top: 100px;
+    //margin-top: 100px;
   }
   .pricing-options__title {
     font-size: 34px;
@@ -2384,12 +2385,16 @@ body {
   .pricing-options__row {
     margin-top: 130px;
   }
-
-  .pricing-options__txt {
-  }
 }
 
 @media (max-width: 400px) {
+  .pricing-options__content {
+    //height: auto;
+    //min-height: 1740px;
+    min-height: 100vh;
+    padding-bottom: 50px;
+  }
+
   .pricing-options__title {
     font-size: 30px;
   }
@@ -2402,10 +2407,198 @@ body {
   .pricing-options__title {
     font-size: 28px;
   }
+  .pricing-options__content {
+    //height: auto;
+    //min-height: 1490px;
+    min-height: 100vh;
+  }
 }
 
 @media (max-width: 320px) {
   .pricing-options__content {
-    min-height: 1430px;
+    //height: auto;
+    min-height: 1400px;
   }
+}
+
+//------------- REPUTATION --------------------
+
+.reputation__content {
+  height: auto;
+  min-height: 590px;
+  background-color: #fff;
+}
+
+.reputation__top {
+  margin-top: -119px;
+}
+
+.reputation__title {
+  font-size: 36px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  color: rgb(33, 33, 33);
+  line-height: 1.194;
+  letter-spacing: 0.064rem;
+  margin-left: 5px;
+  text-align: center;
+  padding-top: 97px;
+  margin-bottom: 52px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 164px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 65px;
+    height: 2px;
+    background-color: $bg-act;
+  }
+}
+
+.reputation___txt {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.reputation__inner {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  padding-top: 70px;
+}
+
+@media (max-width: 1400px) {
+  .reputation__top {
+    margin-top: -115px;
+  }
+
+  .reputation__title {
+    letter-spacing: 0.04rem;
+  }
+
+  .reputation__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1200px) {
+  .reputation__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 990px) {
+  .reputation__content {
+    height: auto;
+    min-height: 750px;
+  }
+  .reputation__title {
+    padding-top: 50px;
+    &::after {
+      top: 115px;
+    }
+  }
+
+  .reputation__inner {
+    gap: 50px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 785px) {
+  .reputation__content {
+    margin-top: 110px;
+  }
+}
+
+@media (max-width: 768px) {
+  .reputation__title {
+    font-size: 30px;
+    padding-top: 20px;
+
+    &::after {
+      content: "";
+      top: 77px;
+    }
+  }
+
+  .reputation___txt {
+    width: 700px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 725px) {
+  .reputation__content {
+    height: auto;
+    min-height: 1000px;
+  }
+}
+
+@media (max-width: 575px) {
+  .reputation__title {
+    font-size: 26px;
+
+    &::after {
+      top: 75px;
+    }
+  }
+}
+
+@media (max-width: 511px) {
+  .reputation__title {
+    font-size: 26px;
+
+    &::after {
+      top: 100px;
+    }
+  }
+  .reputation__content {
+    height: auto;
+    min-height: 1030px;
+  }
+}
+
+@media (max-width: 400px) {
+  .reputation__content {
+    min-height: 890px;
+  }
+
+  .reputation__title {
+    font-size: 24px;
+    padding-top: 0px;
+    margin-bottom: 30px;
+
+    &::after {
+      top: 70px;
+    }
+  }
+  .reputation___txt {
+    width: 300px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .reputation__content {
+    min-height: 780px;
+  }
+
+   .reputation__title {
+    font-size: 22px;
+
+     &::after {
+      top: 66px;
+    }
+   }
 }
