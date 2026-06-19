@@ -312,7 +312,7 @@
     </div><!--container-->
   </section>
 
-  <sectttion class="reputation">
+  <section class="reputation">
     <div class="container">
       <div class="reputation__content">
         <div class="reputation__top">
@@ -340,7 +340,10 @@
         </div><!--reputation__inner-->
       </div><!--reputation__content-->
     </div><!--container-->
-  </sectttion>
+  </section>
+  <?php
+
+  ?>
 
   <br><br><br>
   <script src="js/main.js"></script>
