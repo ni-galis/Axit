@@ -2678,3 +2678,244 @@ body.lock {
     padding: 9px 25px 9px 25px;
   }
 }
+.contact-us__inner {
+  width: 100%;
+  min-height: 610px;
+  height: auto;
+  background-color: #fff;
+  position: relative;
+}
+
+.contact-us__title {
+  font-size: 36px;
+  font-family: "Raleway";
+  color: rgb(33, 33, 33);
+  text-align: center;
+  padding-top: 101px;
+  position: relative;
+  z-index: 1;
+}
+.contact-us__title::after {
+  content: "";
+  position: absolute;
+  top: 165px;
+  left: 670px;
+  z-index: 1;
+  width: 65px;
+  height: 2px;
+  background-color: #ff8b38;
+}
+
+.contact-us__txt {
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: rgb(134, 135, 139);
+  line-height: 1.5;
+  text-align: center;
+  padding: 50px 10px 0px 10px;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-us__form {
+  margin-top: 78px;
+  margin-left: 145px;
+}
+
+.username,
+.email,
+.subject {
+  width: 525px;
+  height: 30px;
+  border-bottom: 2px solid #d6d6d6;
+  margin-bottom: 32px;
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: rgb(189, 189, 189);
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 15px;
+}
+
+.email {
+  margin-bottom: 30px;
+}
+
+.msg {
+  margin-left: 70px;
+  margin-top: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 525px;
+  height: 150px;
+  border-bottom: 2px solid #d6d6d6;
+  margin-bottom: 12px;
+  text-align: left;
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: rgb(189, 189, 189);
+  padding-left: 10px;
+}
+
+.contact-us__button {
+  margin-top: 10px;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
+}
+.contact-us__button:hover {
+  background-color: #cf7332;
+  color: #1201f7;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn {
+  background-color: #ff8b38;
+}
+
+@media (max-width: 1300px) {
+  .contact-us__inner {
+    min-height: 700px;
+  }
+  .contact-us__title {
+    padding-top: 50px;
+  }
+  .contact-us__title::after {
+    content: "";
+    top: 115px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+  .form {
+    display: block;
+    margin-left: calc(100vw - 85%);
+  }
+  .form1 {
+    margin-top: -70px;
+    margin-left: calc(20px + 5%);
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 1020px) {
+  .form {
+    margin-left: 10vw;
+  }
+  .form1 {
+    margin-left: 7vw;
+  }
+}
+@media (max-width: 990px) {
+  .contact-us__title {
+    font-size: 32px;
+  }
+  .contact-us__txt {
+    font-size: 12px;
+  }
+  .username,
+  .email,
+  .subject {
+    width: 400px;
+    height: 25px;
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+  .msg {
+    width: 400px;
+    height: 150px;
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+  .form {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    -webkit-transform: translate(-80%);
+        -ms-transform: translate(-80%);
+            transform: translate(-80%);
+  }
+  .contact-us__button {
+    margin-top: 450px;
+  }
+}
+@media (max-width: 768px) {
+  .form {
+    -webkit-transform: translate(-75%);
+        -ms-transform: translate(-75%);
+            transform: translate(-75%);
+  }
+  .form1 {
+    margin-left: 10vw;
+  }
+}
+@media (max-width: 575px) {
+  .form1 {
+    margin-left: 13vw;
+  }
+}
+@media (max-width: 480px) {
+  .form {
+    -webkit-transform: translate(-78%);
+        -ms-transform: translate(-78%);
+            transform: translate(-78%);
+    margin-top: -20px;
+  }
+  .form1 {
+    margin-left: 16vw;
+  }
+  .username,
+  .email,
+  .subject {
+    width: 300px;
+    height: 25px;
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+  .msg {
+    width: 300px;
+    height: 150px;
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 320px) {
+  .contact-us__inner {
+    width: 100%;
+    min-height: 580px;
+    height: auto;
+  }
+  .contact-us__title {
+    font-size: 30px;
+  }
+  .contact-us__txt {
+    font-size: 14px;
+  }
+  .username,
+  .email,
+  .subject {
+    width: 250px;
+    height: 25px;
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+  .msg {
+    width: 250px;
+    height: 100px;
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+  .form1 {
+    margin-left: 22vw;
+  }
+  .contact-us__button {
+    padding: 8px 12px 8px 12px;
+    margin-top: 320px;
+  }
+}
