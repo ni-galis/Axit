@@ -1038,7 +1038,8 @@ body.lock {
 .google-img,
 .pinterest-img,
 .instagram-img,
-.stumbleupon-img {
+.stumbleupon-img,
+.rss-img {
   cursor: pointer;
   opacity: 0.5;
 }
@@ -1252,6 +1253,7 @@ body.lock {
 }
 .transition-tabs__button:hover {
   background-color: #cf7332;
+  color: #5bf701;
 }
 
 .btn {
@@ -2917,5 +2919,60 @@ body.lock {
   .contact-us__button {
     padding: 8px 12px 8px 12px;
     margin-top: 320px;
+  }
+}
+.footer__social {
+  font-size: 20px;
+  font-family: "FontAwesome";
+  color: rgb(204, 204, 204);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 24px;
+  gap: 25px;
+}
+
+.facebook-img,
+.twitter-img,
+.google-img,
+.fa-pinterest,
+.pinterest-img,
+.instagram-img,
+.stumbleupon-img,
+.rss-img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.facebook-img:hover,
+.twitter-img:hover,
+.google-img:hover,
+.fa-pinterest:hover,
+.pinterest-img:hover,
+.instagram-img:hover,
+.stumbleupon-img:hover,
+.rss-img:hover {
+  color: cyan;
+  opacity: 0.8;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.footer__span {
+  display: block;
+  font-size: 12px;
+  font-family: "Myriad Pro";
+  color: rgba(255, 255, 255, 0.502);
+  text-align: center;
+  padding-top: 16px;
+}
+
+@media (max-width: 320px) {
+  .footer__social {
+    gap: 18px;
   }
 }

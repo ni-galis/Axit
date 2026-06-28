@@ -200,11 +200,6 @@ body {
 }
 
 .header__button {
-  //!position: absolute;
-  //!left: 151px;
-  //!top: 153px;
-  //!z-index: 1;
-
   margin-top: 380px;
   margin-left: 50px;
 }
@@ -336,7 +331,6 @@ body {
   }
 
   .header__button {
-    //!left: 134px;
     margin-left: 35px;
   }
 
@@ -1051,7 +1045,8 @@ body {
 .google-img,
 .pinterest-img,
 .instagram-img,
-.stumbleupon-img {
+.stumbleupon-img,
+.rss-img {
   cursor: pointer;
   opacity: 0.5;
 }
@@ -1251,6 +1246,7 @@ body {
   transition: 0.3s;
   &:hover {
     background-color: #cf7332;
+    color: #5bf701;
   }
 }
 
@@ -3034,4 +3030,48 @@ body {
     padding: 8px 12px 8px 12px;
     margin-top: 320px;
   }
+}
+
+//------------- FOOTER ---------------------
+
+.footer__social {
+  font-size: 20px;
+  font-family: "FontAwesome";
+  color: rgb(204, 204, 204);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+  gap: 25px;
+}
+
+.facebook-img, 
+.twitter-img, 
+.google-img, 
+.fa-pinterest, 
+.pinterest-img, 
+.instagram-img, 
+.stumbleupon-img, 
+.rss-img {
+  transition: .3s;
+  &:hover{
+    color:cyan;
+    opacity: .8;
+    transform: scale(1.2);
+  }
+}
+
+.footer__span {
+  display: block;
+  font-size: 12px;
+  font-family: "Myriad Pro";
+  color: rgba(255, 255, 255, 0.502);
+  text-align: center;
+  padding-top: 16px;
+}
+
+@media (max-width: 320px) {
+  .footer__social {
+  gap: 18px;
+}
 }
