@@ -2510,3 +2510,36 @@ body.lock {
     top: 66px;
   }
 }
+.stylish-design_content {
+  width: 100%;
+  min-height: 320px;
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.stylish-design__title {
+  font-size: 36px;
+  font-family: "Raleway";
+  color: rgb(255, 255, 255);
+  text-align: left;
+  color: #fff;
+  z-index: 1;
+}
+
+.stylish-design__txt {
+  font-size: 16px;
+  font-family: "Raleway";
+  color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  z-index: 1;
+}
+
+.button {
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  z-index: 1;
+}
